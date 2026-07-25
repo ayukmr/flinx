@@ -1272,10 +1272,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1286,23 +1283,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Y"
-				(at 0 3.81 0)
+				(at 3.175 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal"
-				(at 0 -3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1327,9 +1326,31 @@
 					)
 				)
 			)
-			(property "Description" "Two pin crystal"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
@@ -1360,10 +1381,10 @@
 					)
 				)
 			)
-			(symbol "Crystal_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
 					)
 					(stroke
 						(width 0)
@@ -1375,7 +1396,31 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -1398,19 +1443,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 -1.27) (xy 1.905 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.905 0)
+						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -1420,8 +1453,32 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Crystal_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -1441,9 +1498,9 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "2"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1451,6 +1508,43 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(hide yes)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3894,16 +3988,16 @@
 		(uuid "1e300f29-0564-412e-ab72-fab039c6948a")
 	)
 	(junction
-		(at 130.81 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ed44e32-cc58-4bb9-b69d-0775e9e88e35")
-	)
-	(junction
 		(at 31.75 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "229e1741-4d00-42fd-be1c-096037985905")
+	)
+	(junction
+		(at 123.19 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "259a18b3-5497-47d6-a2f3-f613f699fab6")
 	)
 	(junction
 		(at 191.77 129.54)
@@ -4044,6 +4138,12 @@
 		(uuid "67ca94ab-08c0-45a5-befb-df328b4cedc8")
 	)
 	(junction
+		(at 130.81 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "698d7453-1584-4780-b543-fb8fc87a880b")
+	)
+	(junction
 		(at 207.01 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4096,12 +4196,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8525b283-634c-434a-ae1d-659e77b0c782")
-	)
-	(junction
-		(at 123.19 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85f181f0-3d00-41c5-b75c-3e3c15efdedf")
 	)
 	(junction
 		(at 69.85 163.83)
@@ -6520,6 +6614,16 @@
 			(type default)
 		)
 		(uuid "de78c01f-adc6-4d2a-952c-52974380ce8d")
+	)
+	(wire
+		(pts
+			(xy 127 92.71) (xy 127 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfcc25f0-e2fd-4da0-aae9-c24bf61b25ae")
 	)
 	(wire
 		(pts
@@ -9861,7 +9965,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7nH"
+		(property "Value" "4.7 nH"
 			(at 43.18 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10686,7 +10790,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7nH"
+		(property "Value" "4.7 nH"
 			(at 85.09 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10847,7 +10951,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.7nH"
+		(property "Value" "2.7 nH"
 			(at 102.87 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12444,7 +12548,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7nH"
+		(property "Value" "4.7 nH"
 			(at 52.07 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14488,7 +14592,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3nH"
+		(property "Value" "3.3 nH"
 			(at 106.68 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16774,7 +16878,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2nH"
+		(property "Value" "2.2 nH"
 			(at 92.71 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17139,6 +17243,114 @@
 			(project "flinx"
 				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
 					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 127 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a53702f5-f257-4ede-99c2-4dc92dd3a160")
+		(property "Reference" "Y1"
+			(at 127 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "32MHz"
+			(at 127 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_FA128-4Pin_2.0x1.6mm"
+			(at 127 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 127 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+			(at 127 100.33 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+			(at 127 102.87 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "80f64c82-567b-4ced-965f-4df338edc157")
+		)
+		(pin "4"
+			(uuid "73340569-640a-4664-bf9e-255f7f307c7e")
+		)
+		(pin "1"
+			(uuid "f131e39a-0ce5-43bc-8122-3ce3ac2b4334")
+		)
+		(pin "2"
+			(uuid "e99dd3c5-2b11-41d3-b8cd-e6a4cac0fac0")
+		)
+		(instances
+			(project "flinx"
+				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -18276,86 +18488,6 @@
 			(project "flinx"
 				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal")
-		(at 127 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b125c1ea-413d-475f-a025-e0cd19e45264")
-		(property "Reference" "Y1"
-			(at 127 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "32MHz"
-			(at 127 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm"
-			(at 127 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 127 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3b1c09a1-4392-4f07-a22b-d048552aed92")
-		)
-		(pin "2"
-			(uuid "9998e9fe-240f-4c77-b52c-d4ef316900cb")
-		)
-		(instances
-			(project "flinx"
-				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
