@@ -1,0 +1,6 @@
+if SHIELD_FLINX
+
+config ZMK_KEYBOARD_NAME
+    default "flinx"
+
+endif

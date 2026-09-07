@@ -1,0 +1,4 @@
+name: flinx
+build:
+  settings:
+    board_root: .
