@@ -23,6 +23,7 @@ This is intended as a small board mostly for travel, and as a low-profile versio
 
 | Reference          | Qty | Value                       | DigiKey Part #              | $     |
 |:-------------------|:----|:----------------------------|:----------------------------|:------|
+| BAT                | 1   | 420 mAh                     | [1528-4236-ND](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4236/10244671)                | $6.95 |
 | AE1                | 1   | Antenna                     | [712-2450AT18B0100001ECT-ND](https://www.digikey.com/en/products/detail/johanson-technology-inc/2450AT18B0100001E/1560677)  | $0.55 |
 | C1,C2              | 2   | 12 pF                       | [311-1059-1-ND](https://www.digikey.com/en/products/detail/yageo/CC0603JRNPO9BN120/302793)               | $0.20 |
 | C3,C4,C7,C8,C9,C15 | 6   | 4.7 uF                      | [311-1453-1-ND](https://www.digikey.com/en/products/detail/yageo/CC0603ZRY5V5BB475/2833618)               | $0.98 |
