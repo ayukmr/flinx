@@ -2,7 +2,7 @@
 
 <img src="https://static.ayukmr.com/repos/flinx/3.png" height="400">
 
-nRF52833-based low-profile 40% keyboard.
+BL654-based low-profile 40% keyboard.
 
 The board uses Kailh Choc V2 switches, and purposely doesn't include any stabilizers.
 The PCB fits directly inside the case and is mounted with four screws.
