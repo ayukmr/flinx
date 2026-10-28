@@ -743,7 +743,7 @@
         "uuid": "cb115450-b63d-4583-9c68-cd7130599f33"
       }
     ],
-    "used_designators": "C3",
+    "used_designators": "#PWR21,C3",
     "variants": []
   },
   "sheets": [

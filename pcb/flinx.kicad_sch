@@ -4470,16 +4470,16 @@
 		(uuid "d25b8a01-e8c7-4782-96c4-b6f68dbe43e5")
 	)
 	(junction
+		(at 40.64 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4665794-9717-45ae-acf8-c4fd41545e2d")
+	)
+	(junction
 		(at 119.38 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6db38ac-71cb-4ecf-87e1-0434579916c4")
-	)
-	(junction
-		(at 36.83 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d74d130b-a92e-466c-82be-e29d671c2887")
 	)
 	(junction
 		(at 148.59 114.3)
@@ -6049,6 +6049,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 147.32) (xy 44.45 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "925a1e8c-db1e-4776-95df-cf87a3aac822")
+	)
+	(wire
+		(pts
 			(xy 237.49 125.73) (xy 240.03 125.73)
 		)
 		(stroke
@@ -6359,7 +6369,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 147.32) (xy 44.45 147.32)
+			(xy 36.83 147.32) (xy 40.64 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7076,16 +7086,6 @@
 			(type default)
 		)
 		(uuid "f9ef9b4f-face-4e89-b8d4-53cd3d4757af")
-	)
-	(wire
-		(pts
-			(xy 34.29 147.32) (xy 36.83 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb247888-08bc-4102-b172-993fd061350e")
 	)
 	(wire
 		(pts
@@ -8249,30 +8249,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "VDDH"
-		(shape input)
-		(at 34.29 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f447af2c-8e7f-4298-b68c-ec64cd802fbd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.3457 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -16269,7 +16245,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "75k"
+		(property "Value" "10k"
 			(at 264.16 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16715,6 +16691,84 @@
 			(project "flinx"
 				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 40.64 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7d93fbc-f5a8-4e22-a8fd-c904f38947fa")
+		(property "Reference" "#PWR021"
+			(at 40.64 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDDH"
+			(at 40.64 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 40.64 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1b360b5-93c0-4379-87db-a8a7a9ecce25")
+		)
+		(instances
+			(project "flinx"
+				(path "/cb115450-b63d-4583-9c68-cd7130599f33"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)

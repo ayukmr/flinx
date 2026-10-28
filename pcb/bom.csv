@@ -8,8 +8,7 @@ C3,1,100 nF,Capacitor_SMD:C_0603_1608Metric,311-1343-1-ND,https://www.digikey.co
 J1,1,USB_C_Receptacle_USB2.0_14P,Connector_USB:USB_C_Receptacle_JAE_DX07S016JA1R1500,670-DX07S016JA3R1500CT-ND,https://www.digikey.com/en/products/detail/jae-electronics/DX07S016JA3R1500/12354006
 "R1,R2",2,22 Ω,Resistor_SMD:R_0603_1608Metric,311-22.0HRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0722RL/727055
 "R3,R4",2,5.1k Ω,Resistor_SMD:R_0603_1608Metric,311-5.10KHRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268
-R6,1,75k Ω,Resistor_SMD:R_0603_1608Metric,311-75.0KHRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775KL/727378
-R7,1,10k Ω,Resistor_SMD:R_0603_1608Metric,311-10.0KHRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880
+"R6,R7",2,10k Ω,Resistor_SMD:R_0603_1608Metric,311-10.0KHRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880
 SW49,1,SW_SPDT,Project:SW_EG1215AA,EG5720CT-ND,https://www.digikey.com/en/products/detail/e-switch/EG1215AA/9559277
 U1,1,TP4057,Package_TO_SOT_SMD:TSOT-23-6,4518-TP4057CT-ND,https://www.digikey.com/en/products/detail/umw/TP4057/17635237
 Y1,1,32.768 kHz 9 pF,Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm_HandSoldering,2195-CC7V-T1A-32.768KHZ-9PF-20PPM-TB-QACT-ND,https://www.digikey.com/en/products/detail/micro-crystal-ag/CC7V-T1A-32-768KHZ-9PF-20PPM-TB-QA/10499111
